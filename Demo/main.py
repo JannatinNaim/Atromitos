@@ -1,20 +1,12 @@
-# Python
+# x = []
 
-x = 6
+# for i in range(1, 101):
+#     if i % 2 == 0:
+#         x.append(i * i)
+#     else:
+#         x.append(i * 2)
 
-if x > 3:
-    print("x is greater than 3")
+# print(x)
 
-    if x > 5:
-        print("x is greater than 5")
-
-    print("something")
-
-print("something")
-
-
-def some_cool_function(joe_name):
-    print(f"You are really cool, {joe_name}.")
-
-
-some_cool_function("Jannatin Naim")
+x = [i * i if i % 2 == 0 else i * 2 for i in range(1, 101)]
+print(x)
