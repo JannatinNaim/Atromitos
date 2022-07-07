@@ -1,9 +1,27 @@
-x = [1, 2, 3]
-y = [1, 2, 3]
-z = y
+try:
+    user_input = input("enter a number: ")
+    x = int(user_input)
+    result = 1234 / x
+    print(result)
+except ValueError:
+    print("value error")
+except ZeroDivisionError:
+    print("zero division error")
+except:
+    print("uncaught error")
 
-print(x == z)
-print(z == y)
 
-z[0] = "asdf"
-print(y)
+try:
+    # fetch data
+    pass
+except:
+    print("some error occurred")
+
+
+# user_input = input("enter a number: ")
+# x = int(user_input)
+
+# user_input = input("enter a number: ")
+# x = int(user_input)
+# result = 1234 / x
+# print(result)
