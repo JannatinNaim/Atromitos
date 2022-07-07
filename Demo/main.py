@@ -1,27 +1,9 @@
-try:
-    user_input = input("enter a number: ")
-    x = int(user_input)
-    result = 1234 / x
-    print(result)
-except ValueError:
-    print("value error")
-except ZeroDivisionError:
-    print("zero division error")
-except:
-    print("uncaught error")
+def function(name, age=17, *args):
+    print(name, age)
+    print(args)
+
+    for value in args:
+        print(value)
 
 
-try:
-    # fetch data
-    pass
-except:
-    print("some error occurred")
-
-
-# user_input = input("enter a number: ")
-# x = int(user_input)
-
-# user_input = input("enter a number: ")
-# x = int(user_input)
-# result = 1234 / x
-# print(result)
+function("naim", 8, 2, 3, 4)
